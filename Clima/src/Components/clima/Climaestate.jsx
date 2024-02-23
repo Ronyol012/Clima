@@ -23,7 +23,10 @@ export const Climaestate = () => {
 
     /*Inicio de conexion con el API */
     /*Este ApiKey lo entrega la pagina de Open Weather Map  */
+    
     /*Se nesecita la extension de Thunder Client */
+
+    /* En una app normal este uso esta mal intenta utilizar variables desde otros archivos que contengan esta informacion*/
     let apiKeyClima = "e6966a04c72828fa33ef0cc7ee6a6d4a";
 
     /*Creamos la funcion  de Busqueda en el API, conecto al icono de busqueda con el Onlick, la funcion debe ser asyncrona (async) */
@@ -49,6 +52,7 @@ export const Climaestate = () => {
          let response = await fetch(url);
          /*Debemos pasar los datos a formato json */
 
+         /*Puedes hacer el fetch de la data globalmente y luego colocarle la data segun lo que retorne el arreglo.*/
          let data =  await response.json();
          const humedad = document.getElementsByClassName("Porcentaje-Humedad");
          const viento = document.getElementsByClassName("velocidad-viento");
@@ -70,10 +74,12 @@ export const Climaestate = () => {
              {/*Voy a Leer el dato desde el input, definido con el get by classname */}
             <input type="text" name="" id="" className="InputCiudad" placeholder='Buscar Ciudad' />
             {/*El div sera mucho mejor para manejar tamaños, pero probare la sombra directamente con la imagen para mejor estilo del css */}
-            <div className="search-icon" onClick={() => (buscar())}>
+            <div className="search-icon" onClick={() => (buscar())}> {/*Esto no hace nada tienes que colocar un boton en vez de un div*/}
                 <img src={search_icon} alt="" srcset="" />
             </div>
         </div>
+
+            {/*Aqui tienes que buscar la manera de colocar los datos que encontraste dentro de buscar. Investiga que son los hooks useState y useEffect. Esto te ayuda. */}
 
              <div className="Imagen-Nube imagen">
                 <img src={cloud_icon} alt="" />
