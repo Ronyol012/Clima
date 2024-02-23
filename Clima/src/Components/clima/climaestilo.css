@@ -1,0 +1,124 @@
+
+
+.Container{
+    width: 50%;
+    height: 750px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    /*El deg es el grado de la inclinacion del degradado*/
+    background-image: linear-gradient(270deg, #130754, #3b2f80 100%);
+}
+
+
+
+.top-bar{
+    display: flex;
+    justify-content: center;
+    /* gap: row-gap column-gap;
+    Establece el tamaño del espacio entre las filas en un diseño de cuadrícula
+    */
+    gap: 14px;
+    padding-top: 60px;
+}
+
+.top-bar input{
+    display: flex;
+    width: 360px;
+    height: 50px;
+    border: none;
+    /*
+    La propiedad CSS outline es una forma reducida para establecer una o más de las propiedades individuales de contorno outline-style, outline-width y outline-color en una sola declaración. En la mayoría de los casos el uso de este atajo es preferible y más conveniente.
+    */
+    outline: none;
+    border-radius: 60px;
+    /*El margen interior de la caja*/
+    padding: 0 0 0 40px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.search-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 50px;
+    background: #ebfffc;
+    border-radius: 30px;
+
+    /*Para que aparezca el cursor de legado*/
+    cursor:pointer;
+}
+
+.titulo{
+    color: #ebfffc;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    padding: 60px 0 0 0;
+}
+
+.Imagen-Nube{
+    /*Necesito aplicar el flex antes de usar el justify content*/
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0 0;
+}
+
+.temperatura{ 
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 100px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.location{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 50;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.data-container{
+    /*Necesito aplicar el flex antes de usar el justify content*/
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0 0;
+    color: white;
+    
+}
+
+.element{
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.imagen{
+    filter:drop-shadow( 10px 7px 10px white);
+}
+
+.data{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.icon{
+    width: 20%;
+    height: 20%;
+    margin-top: 12px;
+}
+
+
+
